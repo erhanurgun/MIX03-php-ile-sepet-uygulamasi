@@ -1,10 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-
 html,
 body {
   font-family: "Poppins", "Arial", cursive;
   background-color: #ececec;
   text-align: center !important;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color-1) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color-2) !important;
 }
 
 /* For Desktop */
@@ -21,21 +33,26 @@ body {
   }
 }
 
+footer a {
+  text-decoration: none;
+  color: var(--main-color-1) !important;
+}
+
+footer a:hover {
+  opacity: 0.9;
+}
+
 .footer-author {
-  background-color: var(--main-color-2);
+  background-color: var(--main-color-2) !important;
   color: #ffffff;
   padding: 20px;
   width: 100%;
   bottom: 0;
 }
 
-footer a {
-  text-decoration: none;
-  color: #217ed4;
-}
-
-footer a:hover {
-  opacity: 0.99;
+.footer-author,
+.market {
+  text-shadow: 0 0 3.5px var(--main-color-1) !important;
 }
 
 .card-price,
@@ -49,11 +66,7 @@ footer a:hover {
 
 .bt-warning {
   background-color: var(--main-color-1) !important;
-}
-
-.btn:hover {
-  background-color: var(--main-color-2) !important;
-  opacity: 0.9 !important;
+  color: #ffffff !important;
 }
 
 .bt-dark {
@@ -62,6 +75,11 @@ footer a:hover {
 
 .bt-text {
   color: var(--main-color-1) !important;
+}
+
+.btn:hover {
+  background-color: var(--main-color-2) !important;
+  opacity: 0.9 !important;
 }
 
 .page-item.disabled .page-link {
@@ -86,10 +104,6 @@ footer a:hover {
 
 .bosluk {
   margin-left: 1.5rem;
-}
-
-.market {
-  text-shadow: 0 0 3px var(--main-color-1) !important;
 }
 
 .table tbody tr td {
