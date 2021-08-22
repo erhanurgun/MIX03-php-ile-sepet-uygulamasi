@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+html,
+body {
+  font-family: "Poppins", "Arial", cursive;
+  background-color: #ececec;
+  text-align: center !important;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 780px) {
+  .pagi-ml {
+    margin-left: 33.7% !important;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 780px) {
+  .pagi-ml {
+    margin-left: 13% !important;
+  }
+}
+
+.footer-author {
+  background-color: var(--main-color-2);
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #217ed4;
+}
+
+footer a:hover {
+  opacity: 0.99;
+}
+
+.card-price,
+.color-danger {
+  color: #dc3545;
+}
+
+.cart-mr {
+  margin-right: 0.3rem !important;
+}
+
+.bt-warning {
+  background-color: var(--main-color-1) !important;
+}
+
+.btn:hover {
+  background-color: var(--main-color-2) !important;
+  opacity: 0.9 !important;
+}
+
+.bt-dark {
+  background-color: var(--main-color-2) !important;
+}
+
+.bt-text {
+  color: var(--main-color-1) !important;
+}
+
+.page-item.disabled .page-link {
+  background-color: rgb(209, 209, 209, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.page-item.active .page-link {
+  background-color: var(--main-color-1) !important;
+  border-color: var(--main-color-1) !important;
+  color: #ffffff !important;
+}
+
+.page-item .page-link {
+  background-color: #ffffff !important;
+  color: var(--main-color-1) !important;
+}
+
+.page-item .page-link:hover {
+  border-color: var(--main-color-1) !important;
+}
+
+.bosluk {
+  margin-left: 1.5rem;
+}
+
+.market {
+  text-shadow: 0 0 3px var(--main-color-1) !important;
+}
