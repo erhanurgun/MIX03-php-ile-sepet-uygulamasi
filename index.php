@@ -1,5 +1,8 @@
 <?php require_once 'header.php'; ?>
 
+<head>
+    <title>Ürün Listesi | BTMarket</title>
+</head>
 <h2 class="text-center">Ürün Listesi</h2>
 <hr>
 <div class="row">

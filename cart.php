@@ -1,4 +1,8 @@
 <?php require_once 'header.php'; ?>
+
+<head>
+    <title>Alışveriş Sepetim | BTMarket</title>
+</head>
 <?php if ($total_count == 0) : ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Uyarı!</strong> <br />
@@ -8,8 +12,8 @@
     </div>
 <?php else : ?>
     <div class="alert alert-info alert-dismissible fade show" role="alert">
-        <strong>Bilgi!</strong> <br />
-        Sepetinizde <strong><?= $total_count; ?></strong> adet ürün bulunmaktadır.
+        <strong class="bt-text">Bilgi!</strong> <br />
+        Sepetinizde <strong class="bt-text"><?= $total_count; ?> adet</strong> ürün bulunmaktadır.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <table class="table table-striped table-hover">
@@ -46,7 +50,7 @@
                     </td>
                     <td><strong><?= $product->total_price; ?> ₺</strong></td>
                     <td>
-                        <button product-id="<?= $product->p_id; ?>" class="btn btn-danger btn-sm btnRemoveFromCart" type="button">
+                        <button product-id="<?= $product->p_id; ?>" class="btn bt-warning btn-sm btnRemoveFromCart" type="button">
                             <i class="fa fa-trash"></i> Sil
                         </button>
                     </td>
@@ -55,10 +59,10 @@
         </tbody>
         <tfoot>
             <th colspan="3" class="text-right">
-                Toplam Ürün: <span class="color-danger"> <?= $total_count; ?> adet</span>
+                Toplam Ürün: <span class="bt-text"> <?= $total_count; ?> adet</span>
             </th>
             <th colspan="4" class="text-right">
-                Toplam Tutar: <span class="color-danger"><?= $total_price; ?> ₺</span>
+                Toplam Tutar: <span class="bt-text"><?= $total_price; ?> ₺</span>
             </th>
         </tfoot>
     </table>
