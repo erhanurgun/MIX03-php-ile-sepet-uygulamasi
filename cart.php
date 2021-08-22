@@ -58,12 +58,21 @@
             <?php endforeach; ?>
         </tbody>
         <tfoot>
-            <th colspan="3" class="text-right">
-                Toplam Ürün: <span class="bt-text"> <?= $total_count; ?> adet</span>
-            </th>
-            <th colspan="4" class="text-right">
-                Toplam Tutar: <span class="bt-text"><?= $total_price; ?> ₺</span>
-            </th>
+            <tr>
+                <th colspan="3" class="text-right">
+                    Toplam Ürün: <span class="bt-text"> <?= $total_count; ?> adet</span>
+                </th>
+                <th colspan="4" class="text-right">
+                    Toplam Tutar: <span class="bt-text"><?= $total_price; ?> ₺</span>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="7" class="text-center">
+                    <button product-id="<?= $product->p_id; ?>" class="btn bt-warning btnRemoveAllCart">
+                        <i class="fa fa-trash-alt"></i> Sepeti Komple Temizle
+                    </button>
+                </th>
+            </tr>
         </tfoot>
     </table>
 <?php endif ?>

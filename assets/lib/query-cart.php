@@ -12,7 +12,9 @@ if (isset($_POST['p'])) {
         $product->count = 1;
         echo addToCart($product);
     } else if ($islem == "removeFromCart") {
-        echo removeFromCart($pid);
+        echo removeCart($pid, true);
+    } else if ($islem == "removeAllCart") {
+        echo removeCart($pid, false);
     }
 }
 /* --------------------------------------------- */

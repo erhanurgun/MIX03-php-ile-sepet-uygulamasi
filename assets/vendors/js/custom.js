@@ -19,3 +19,4 @@ const cardItem = (btnClass, url, dataP, logical) => {
 let url = "assets/lib/query-cart.php";
 cardItem(".btnAddToCart", url, "addToCart", true);
 cardItem(".btnRemoveFromCart", url, "removeFromCart", false);
+cardItem(".btnRemoveAllCart", url, "removeAllCart", false);

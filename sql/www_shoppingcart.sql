@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2021 at 10:07 PM
+-- Generation Time: Aug 22, 2021 at 11:37 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.7
 
@@ -41,14 +41,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`p_id`, `p_name`, `p_detail`, `p_price`, `p_imgurl`, `p_status`) VALUES
-(1, 'Demo Ürün - 1', 'Bu kısım bir demo açıklamadır - 1', 29.99, 'p-01.jpg', '0'),
-(2, 'Demo Ürün - 2', 'Bu kısım bir demo açıklamadır - 2', 24.99, 'p-02.jpg', '1'),
-(3, 'Demo Ürün - 3', 'Bu kısım bir demo açıklamadır - 3', 41.99, 'p-03.jpg', '0'),
-(4, 'Demo Ürün - 4', 'Bu kısım bir demo açıklamadır - 4', 23.99, 'p-04.jpg', '1'),
-(5, 'Demo Ürün - 5', 'Bu kısım bir demo açıklamadır - 5', 14.99, 'p-05.jpg', '0'),
-(6, 'Demo Ürün - 6', 'Bu kısım bir demo açıklamadır - 6', 7.99, 'p-06.jpg', '1'),
-(7, 'Demo Ürün - 7', 'Bu kısım bir demo açıklamadır - 7', 46.99, 'p-07.jpg', '0'),
-(8, 'Demo Ürün - 8', 'Bu kısım bir demo açıklamadır - 8', 63.99, 'p-08.jpg', '1');
+(1, 'Demo Ürün - 1', 'Bu kısım bir demo açıklamadır - 1', 29.99, 'p-01.jpg', '1'),
+(2, 'Demo Ürün - 2', 'Bu bir demo açıklamadır - 2', 24.99, 'p-02.jpg', '1'),
+(3, 'Demo Ürün - 3', 'Bu bir demo açıklamadır - 3', 41.99, 'p-03.jpg', '1'),
+(4, 'Demo Ürün - 4', 'Bu bir demo açıklamadır - 4', 23.99, 'p-04.jpg', '1'),
+(5, 'Demo Ürün - 5', 'Bu bir demo açıklamadır - 5', 14.99, 'p-05.jpg', '1'),
+(6, 'Demo Ürün - 6', 'Bu bir demo açıklamadır - 6', 7.99, 'p-06.jpg', '1'),
+(7, 'Demo Ürün - 7', 'Bu bir demo açıklamadır - 7', 46.99, 'p-07.jpg', '1'),
+(8, 'Demo Ürün - 8', 'Bu bir demo açıklamadır - 8', 63.99, 'p-08.jpg', '1'),
+(9, 'Demo Ürün - 9', 'Bu bir demo açıklamadır - 9', 14.99, 'p-09.jpg', '1'),
+(10, 'Demo Ürün - 10', 'Bu bir demo açıklamadır - 10', 7.99, 'p-10.jpg', '1'),
+(11, 'Demo Ürün - 11', 'Bu bir demo açıklamadır - 11', 46.99, 'p-11.jpg', '1'),
+(12, 'Demo Ürün - 12', 'Bu bir demo açıklamadır - 12', 63.99, 'p-12.jpg', '1');
 
 --
 -- Indexes for dumped tables
@@ -68,7 +72,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

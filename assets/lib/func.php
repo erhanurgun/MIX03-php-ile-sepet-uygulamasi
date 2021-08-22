@@ -42,7 +42,7 @@ function addToCart($product_item)
     return $total_count;
 }
 /* --------------------------------------------- */
-function removeFromCart($product_id)
+function removeCart($product_id, $logical)
 {
     // SESSION Kontrolü:
     if (isset($_SESSION['shoppingCart'])) {
@@ -50,7 +50,11 @@ function removeFromCart($product_id)
         $products    = $shoppingCart['products'];
         // Ürünü Listeden Çıkar:
         if (array_key_exists($product_id, $products)) {
-            unset($products[$product_id]);
+            if ($logical) {
+                unset($products[$product_id]);
+            } else {
+                session_destroy();
+            }
         }
         // Sepetin Hesaplanması:
         $total_price = 0.0;
