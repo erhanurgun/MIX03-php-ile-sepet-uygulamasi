@@ -21,12 +21,12 @@ if (isset($_GET['p'])) {
     $pid   = formGet('product_id');
     // İşlem Tipi:
     if ($islem == "incCount") {
-        if (incCount($pid)) {
+        if (itemCount($pid, true)) {
             Header("Location: ../../cart");
             exit;
         }
     } else if ($islem == "decCount") {
-        if (decCount($pid)) {
+        if (itemCount($pid, false)) {
             Header("Location: ../../cart");
             exit;
         }

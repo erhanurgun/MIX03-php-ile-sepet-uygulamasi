@@ -17,7 +17,7 @@ function addToCart($product_item)
     // SESSION Kontrolü:
     if (isset($_SESSION['shoppingCart'])) {
         $shoppingCart = $_SESSION['shoppingCart'];
-        $products    = $shoppingCart['products'];
+        $products     = $shoppingCart['products'];
     } else {
         $products = [];
     }
@@ -68,7 +68,7 @@ function removeFromCart($product_id)
     }
 }
 /* --------------------------------------------- */
-function incCount($product_id)
+function itemCount($product_id, $logical)
 {
     // SESSION Kontrolü:
     if (isset($_SESSION['shoppingCart'])) {
@@ -77,34 +77,14 @@ function incCount($product_id)
     }
     // Adet Kontrolü:
     if (array_key_exists($product_id, $products)) {
-        $products[$product_id]->count++;
-    }
-    // Sepetin Hesaplanması:
-    $total_price = 0.0;
-    $total_count = 0;
-    foreach ($products as $product) {
-        $product->total_price = $product->count * $product->p_price;
-        $total_price += $product->total_price;
-        $total_count += $product->count;
-    }
-    $summary['total_price'] = $total_price;
-    $summary['total_count'] = $total_count;
-    $_SESSION['shoppingCart']['products'] = $products;
-    $_SESSION['shoppingCart']['summary']  = $summary;
-    return $total_count;
-}
-/* --------------------------------------------- */
-function decCount($product_id)
-{
-    // SESSION Kontrolü:
-    if (isset($_SESSION['shoppingCart'])) {
-        $shoppingCart = $_SESSION['shoppingCart'];
-        $products     = $shoppingCart['products'];
-    }
-    // Adet Kontrolü:
-    if (array_key_exists($product_id, $products)) {
-        if ($products[$product_id]->count > 1) {
-            $products[$product_id]->count--;
+        if ($logical) {
+            if ($products[$product_id]->count < 20) {
+                $products[$product_id]->count++;
+            }
+        } else {
+            if ($products[$product_id]->count > 1) {
+                $products[$product_id]->count--;
+            }
         }
     }
     // Sepetin Hesaplanması:
