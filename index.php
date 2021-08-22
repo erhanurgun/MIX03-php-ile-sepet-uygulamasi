@@ -5,24 +5,28 @@
 <div class="row">
     <?php
     $i = 0;
-    $products = [1, 2, 3, 4, 5, 6, 7, 8];
-    foreach ($products as $product) : $i++; ?>
-        <!-- Card Start -->
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <img class="card-img-top" src="assets/img/products/p-0<?= $i; ?>.jpg" alt="{urun_adi}">
-                <div class="card-body">
-                    <h5 class="card-title">{urun_adi}</h5>
-                    <p class="card-text">{urun_detayi}</p>
-                    <p class="card-price">{urun_fiyati} ₺</p>
-                    <a href="#" class="btn bt-warning text-white"><i class="fa fa-cart-plus"></i> Sepete Ekle</a>
+    foreach ($products as $product) :
+        $i++;
+        if ($product->p_status == 1) :
+    ?>
+            <!-- Card Start -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img class="img-fluid card-img-top" src="assets/img/products/<?= $product->p_imgurl; ?>" alt="<?= $product->p_name; ?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $product->p_name; ?></h5>
+                        <p class="card-text"><?= $product->p_detail; ?></p>
+                        <p class="card-price"><?= $product->p_price; ?> ₺</p>
+                        <button product-id="<?= $product->p_id; ?>" type="button" class="btn bt-warning text-white btnAddToCart"><i class="fa fa-cart-plus"></i> Sepete Ekle</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- ./Card End -->
+            <!-- ./Card End -->
+        <?php endif; ?>
     <?php endforeach; ?>
 </div>
 <hr>
+<!-- TODO: Pagination kısmı henüz tamamlanmadı -->
 <nav>
     <ul class="pagination pagi-ml">
         <li class="page-item disabled">

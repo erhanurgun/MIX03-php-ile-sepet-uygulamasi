@@ -91,3 +91,26 @@ footer a:hover {
 .market {
   text-shadow: 0 0 3px var(--main-color-1) !important;
 }
+
+.table tbody tr td {
+  height: 26px;
+  line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 0px;
+}
+
+.table tbody tr td input {
+  border: 2px solid #ececec !important;
+  text-align: center;
+  width: 100px;
+}
+
+.table tbody tr td input:focus {
+  outline: 0;
+  border: 2px solid var(--main-color-1) !important;
+}
+
+.table tbody tr td input,
+.table tbody tr td a {
+  border-radius: 1rem !important;
+}

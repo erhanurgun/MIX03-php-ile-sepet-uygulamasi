@@ -11,7 +11,6 @@
     <title>PHP ve jQuery ile Sepetim Uygulaması</title>
     <link rel="shortcut icon" href="https://bilinentasarim.com/dimg/diger/favicon.svg">
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendors/datatables/css/datatables.min.css">
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/vendors/css/custom.css">
 
@@ -46,7 +45,7 @@
                 <a href="cart" class="btn btn-sm text-light position-relative cart-mr">
                     <i class="fa fa-shopping-cart"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bt-warning">
-                        10
+                        <span id="cart-count"><?= $total_count; ?></span>
                     </span>
                 </a>
             </div>
