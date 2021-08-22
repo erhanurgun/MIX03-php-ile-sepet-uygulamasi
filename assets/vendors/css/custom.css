@@ -33,6 +33,10 @@ body {
   }
 }
 
+.pagi-pb {
+  padding-bottom: 5.1rem !important;
+}
+
 footer a {
   text-decoration: none;
   color: var(--main-color-1) !important;

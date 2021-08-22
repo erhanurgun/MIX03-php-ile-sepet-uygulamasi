@@ -44,7 +44,7 @@
 <body>
     <!-- Header Start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bt-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bt-dark">
             <div class="container">
                 <a class="navbar-brand" href="index">
                     <span class="logo">

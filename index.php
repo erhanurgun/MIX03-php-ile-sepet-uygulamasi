@@ -30,7 +30,7 @@
 </div>
 <hr>
 <!-- TODO: Pagination kısmı henüz tamamlanmadı -->
-<nav>
+<nav class="pagi-pb">
     <ul class="pagination pagi-ml">
         <li class="page-item disabled">
             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">

@@ -3,7 +3,7 @@
 <!-- ./Main End -->
 
 <!-- Footer Start -->
-<footer class="footer-author">
+<footer class="footer-author fixed-bottom">
     Copyright © tüm hakları saklıdır. Tasarlayan 💖
     <a href="http://bilinentasarim.com/" target="_blank" rel="noopener noreferrer">bilinentasarim.com</a>
 </footer>
