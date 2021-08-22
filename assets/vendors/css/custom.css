@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 html,
 body {
-  font-family: "Poppins", "Arial", cursive;
-  background-color: #ececec;
-  text-align: center !important;
+  font-family: "Poppins", "Verdana", "Arial", cursive;
+  background-color: #ececec85;
+  text-align: center;
 }
 
 /* Scroll Bar */
@@ -13,10 +13,10 @@ body {
   border-left: 1px solid #ccc;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color-1) !important;
+  background-color: var(--main-color-1);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--main-color-2) !important;
+  background-color: var(--main-color-2);
 }
 
 /* For Desktop */
@@ -127,4 +127,10 @@ footer a:hover {
 .table tbody tr td input,
 .table tbody tr td a {
   border-radius: 1rem !important;
+}
+
+.item-img {
+  margin-bottom: 5px;
+  margin-top: -13px;
+  width: 55px;
 }

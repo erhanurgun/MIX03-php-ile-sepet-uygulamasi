@@ -35,7 +35,7 @@
                 <tr>
                     <th scope="row"><?= $i < 10 ? '0' . $i : $i; ?></th>
                     <td>
-                        <img width="50" src="assets/img/products/<?= $product->p_imgurl; ?>" alt="<?= $product->p_name; ?>">
+                        <img class="item-img" src="assets/img/products/<?= $product->p_imgurl; ?>" alt="<?= $product->p_name; ?>">
                     </td>
                     <td><?= $product->p_name; ?></td>
                     <td><?= $product->p_price; ?></td>
@@ -62,12 +62,10 @@
                 <th colspan="3" class="text-right">
                     Toplam Ürün: <span class="bt-text"> <?= $total_count; ?> adet</span>
                 </th>
-                <th colspan="4" class="text-right">
+                <th colspan="3" class="text-right">
                     Toplam Tutar: <span class="bt-text"><?= $total_price; ?> ₺</span>
                 </th>
-            </tr>
-            <tr>
-                <th colspan="7" class="text-center">
+                <th colspan="1" class="text-right">
                     <button product-id="<?= $product->p_id; ?>" class="btn bt-warning btnRemoveAllCart">
                         <i class="fa fa-trash-alt"></i> Sepeti Komple Temizle
                     </button>
