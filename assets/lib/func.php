@@ -27,6 +27,7 @@ function addToCart($product_item)
     } else {
         $products[$product_item->p_id] = $product_item;
     }
+    /* TODO: Ayrı bir fonksiyon olarak eklenebilir */
     // Sepetin Hesaplanması:
     $total_price = 0.0;
     $total_count = 0;
@@ -56,6 +57,7 @@ function removeCart($product_id, $logical)
                 session_destroy();
             }
         }
+        /* TODO: Ayrı bir fonksiyon olarak eklenebilir */
         // Sepetin Hesaplanması:
         $total_price = 0.0;
         $total_count = 0;
@@ -91,6 +93,7 @@ function itemCount($product_id, $logical)
             }
         }
     }
+    /* TODO: Ayrı bir fonksiyon olarak eklenebilir */
     // Sepetin Hesaplanması:
     $total_price = 0.0;
     $total_count = 0;
